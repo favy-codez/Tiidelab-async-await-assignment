@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    .container{
+        display: block;
+    }
+    button{
+        padding: 10px 20px;
+    }
+</style>
 <body>
 <!--     
     https://www.videezy.com/free-video/mp4-videos
@@ -18,10 +26,11 @@
     N.B: The video should be able to play after downloading!  
 -->
 
-   <button id="promisebtn">PromiseBtn</button>
-   <button id="asyncbtn">AsyncBtn</button>
-   <button id="callbackbtn" onclick="downloadVideo(myCallback)">CallbackBtn</button>       
-
+   <div class="container">
+    <button id="promisebtn">PromiseBtn</button>
+    <button id="asyncbtn">AsyncBtn</button>
+    <button id="callbackbtn" onclick="downloadVideo(myCallback)">CallbackBtn</button>    
+   </div>   
     <script src="./promise.js"></script>
    <script src="./asyc.js"></script>
    <script src="./callback.js"></script>
